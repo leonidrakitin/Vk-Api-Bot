@@ -1,0 +1,9 @@
+token:
+  confirmation: ${your.confirmation.token}
+  access: ${your.access.token}
+
+secret:
+  key: ${your.access.token}
+
+server:
+  port: ${your.server.port}
