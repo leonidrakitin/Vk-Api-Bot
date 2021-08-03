@@ -38,11 +38,15 @@ public class Event
                     eventObject.getBody() + "', from user_id: " +
                     eventObject.getUserId();
         }
-        else
+        else if (type == ApiCallback.MESSAGE_REPLY)
         {
             message = "type: '" + type.name() + "', body: '" +
                     eventObject.getBody() + "', to user_id: " +
                     eventObject.getUserId();
+        }
+        else
+        {
+            message = "type: '" + type.name();
         }
 
         return message;
